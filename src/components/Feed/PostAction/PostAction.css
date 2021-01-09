@@ -1,0 +1,18 @@
+.postAction {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    color: gray;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.postAction > h4 {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.postAction:hover {
+    background-color: whitesmoke;
+    border-radius: 10px;
+}

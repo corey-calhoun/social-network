@@ -1,0 +1,116 @@
+.sidebar {
+    position: sticky;
+    top: 65px;
+    flex: 0.2;
+    border-radius: 10px;
+    text-align: center;
+    height: fit-content;
+}
+
+.sidebar__avatar {
+    margin-bottom: 10px;
+}
+
+.sidebar__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.5px solid lightgray;
+    border-bottom: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #fff;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.sidebar__top > img {
+    margin-bottom: -20px;
+    width: 100%;
+    height: 60px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+
+.sidebar__top > h2 {
+    font-size: 14px;
+}
+
+.sidebar__top > h4 {
+    color: lightgray;
+    font-size: 12px;
+}
+
+.sidebar__stats {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+
+
+.sidebar__stat {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar__stat:hover {
+    text-decoration: underline #0a9cf5;
+    transition: ease 0.75ms;
+}
+
+.sidebar__stat > p {
+    font-size: 10.5px;
+}
+
+.sidebar__statNumber {
+    font-weight: 600;
+    color: #0a9cf5;
+}
+
+.sidebar__statNumber:hover {
+    transform: scale(1.1);
+    transition: ease 0.58ms;
+    color: #003062;
+    font-weight: 600;
+}
+
+.sidebar__bottom {
+    text-align: left;
+    padding: 10px;
+    border: 0.5px solid lightgray;
+    background-color: #fff;border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.sidebar__bottom > p {
+    font-weight: bold;
+}
+
+.sidebar__recentItem {
+    display: flex;
+    font-size: 12px;
+    color: gray;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.sidebar__recentItem:hover {
+    transform: scale(1.1);
+    transition: ease 0.58ms;
+    background-color: whitesmoke;
+    color: #000;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.sidebar__hash {
+    margin-right: 10px;
+    margin-left: 5px;
+}

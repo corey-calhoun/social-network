@@ -1,0 +1,43 @@
+.feed__postContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 10px;
+    margin-left: 25px;
+    border-radius: 5px 5px 10px 10px;
+    flex: 0.6;
+}
+
+.feed__input {
+    height: 35px;
+    width: 350px;
+    border-radius: 25px;
+}
+
+.feed__input[type="text"] {
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.feed__searchButton {
+    margin-left: -45px !important;
+}
+
+.feed__postActions {
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+
+.post__action {
+    margin-right: 10px;
+    align-self: center;
+    justify-content: center;
+    color: gray;
+    font-weight: 600;
+}
+
+.feed__postSection {
+    margin-top: 25px;
+}
