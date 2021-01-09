@@ -12,8 +12,10 @@ function Feed() {
 
     //This is what updates your DB when you update posts
     useEffect(() => {
-        db.collection('posts').onSnapshot(snapshot => (
-            setPosts(snapshot.docs.map((doc) => (
+        db.collection('posts')
+            .orderBy("timestamp", "desc")
+            .onSnapshot(snapshot => (
+                setPosts(snapshot.docs.map((doc) => (
                 {
                     id: doc.id,
                     data: doc.data()
@@ -52,7 +54,8 @@ function Feed() {
                         type="submit"
                     >
                         <Create 
-                            className="feed__searchButtonIcon" fontSize="small" 
+                            className="feed__searchButtonIcon" 
+                            fontSize="small" 
                             color="disabled" 
                         />
                     </button>
