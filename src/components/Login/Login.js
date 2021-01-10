@@ -13,13 +13,28 @@ function Login() {
     const [profilePic, setProfilePic] = useState('');
     const dispatch = useDispatch();
 
+    const loginToApp = (e) => {
+        e.preventDefault();
+
+        auth.signInWithEmailAndPassword(email, password)
+        .then(userAuth => {
+            dispatch(login({
+                email: userAuth.email,
+                uid: userAuth.user.uid,
+                displayName: userAuth.user.displayName,
+                profileUrl: userAuth.user.photoUrl,
+            }))
+        })
+        .catch(error => alert(error));
+    };
+
     const register = () => {
         if(!name) {
             return alert('Please enter your name');
         } 
 
-        auth.createUserWithEmailAndPassword(email, password).then(
-            (userAuth) => {
+        auth.createUserWithEmailAndPassword(email, password)
+            .then((userAuth) => {
                 userAuth.user.updateProfile({
                     displayName: name,
                     photoUrl: profilePic,
@@ -31,9 +46,9 @@ function Login() {
                         displayName: name,
                         photoUrl: profilePic
                     }));
-                })
-            }
-        )
+                });
+            })
+            .catch((error) => alert(error));
     };
 
     const logIntoApp = (e) => {
@@ -63,7 +78,7 @@ function Login() {
                         onChange={e => setEmail(e.target.value)} 
                         type="email" 
                         placeholder="Enter your email address..." 
-                        required 
+                        required
                     />
                     <input 
                         value={password}
@@ -74,7 +89,7 @@ function Login() {
                     />
                     <button 
                         type="submit" 
-                        onClick={logIntoApp}
+                        onClick={loginToApp}
                     >Sign In</button>
                 </form>
 
