@@ -30,7 +30,7 @@ function Feed() {
             name: "Corey Calhoun",
             description: 'Full Stack JavaScript Developer',
             message: input,
-            photoUrl: '',
+            photoUrl: 'https://image.freepik.com/free-vector/panda-esport-gaming-mascot-logo_1258-29055.jpg',
             timestamp: firebase.firestore.FieldValue.serverTimestamp(),
         });
         
