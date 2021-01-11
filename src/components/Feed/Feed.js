@@ -42,6 +42,7 @@ function Feed() {
             <div className="feed__postContainer">
                 <form>
                     <input
+                        value={input.value}
                         type="text" 
                         className="feed__input" 
                         placeholder="Start a post..."
@@ -55,7 +56,7 @@ function Feed() {
                         <Create 
                             className="feed__searchButtonIcon" 
                             fontSize="small" 
-                            color="disabled" 
+                            color="disabled"
                         />
                     </button>
                 </form>
