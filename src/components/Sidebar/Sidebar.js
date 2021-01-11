@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { selectUser } from "../../helpers/userSlice";
 import "./Sidebar.css"
 
-function Sidebar({ avatar }) {
+function Sidebar({}) {
 
     const user = useSelector(selectUser);
 
@@ -19,7 +19,9 @@ function Sidebar({ avatar }) {
         <div className="sidebar">
             <div className="sidebar__top">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeXAhfsN1JhTAHF0l2t_0RrEs-JqvxJzqdrQ&usqp=CAU" alt="" />
-                <Avatar className="sidebar__avatar" src={avatar} />
+                <Avatar className="sidebar__avatar" src={user.photoUrl}>
+                    {user.email[0]}
+                </Avatar>
                 <h3>{user.displayName}</h3>
                 <h4>{user.email}</h4>
             </div>

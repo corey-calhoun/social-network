@@ -8,7 +8,7 @@ import { logout } from '../../helpers/userSlice';
 import { auth } from '../../firebase';
 
 function Header() {
-
+    
     const dispatch = useDispatch();
 
     const logoutOfApp = () => {
@@ -43,7 +43,7 @@ function Header() {
                 <HeaderOption Icon={BusinessCenter} title="Jobs"/>
                 <HeaderOption Icon={Message} title="Messages"/>
                 <HeaderOption Icon={Notifications} title="Notifications"/>
-                <HeaderOption avatar='https://placeimg.com/300/300/people' title="me" onClick={logoutOfApp}/>
+                <HeaderOption  title="me" onClick={logoutOfApp}/>
             </div>
         </div>
     )

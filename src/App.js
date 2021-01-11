@@ -6,7 +6,7 @@ import Header from './components/Header.js/Header';
 import Login from './components/Login/Login';
 import Sidebar from './components/Sidebar/Sidebar';
 import { auth } from './firebase';
-import { logout,login, selectUser } from './helpers/userSlice'
+import { logout, login, selectUser } from './helpers/userSlice'
 
 function App() {
 
@@ -17,25 +17,27 @@ function App() {
     auth.onAuthStateChanged(userAuth => {
       if(userAuth) {
         // user is logged in
-        dispatch(login({
+        dispatch(
+          login({
           email: userAuth.email,
           uid: userAuth.uid,
           displayName: userAuth.displayName,
           photoUrl: user.photoUrl,
-        }))
+          })
+        );
       } else {
         //user is logged out
         dispatch(logout());
       }
-    })
-  })
+    });
+  }, []);
 
 
   return (
     <div className="app">
       <Header />
 
-      {!user ? <Login /> : (
+      {!user ? ( <Login /> ) : (
         <div className="app__body">
           <Sidebar />
           <Feed />
