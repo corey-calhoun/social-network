@@ -1,7 +1,7 @@
 import React from 'react'
 import './HeaderOption.css'
 import { Avatar } from '@material-ui/core'
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { selectUser } from '../../helpers/userSlice';
 
 function HeaderOption({ avatar, Icon, title, onClick }) {
@@ -10,7 +10,9 @@ function HeaderOption({ avatar, Icon, title, onClick }) {
     return (
         <div className="headerOption" onClick={onClick} >
             {Icon && <Icon className="headerOption__icon" />}
-            {avatar && <Avatar className="headerOption__icon" src={avatar} />}
+            {avatar && (
+                <Avatar className="headerOption__icon" src={user?.photoUrl}>{user?.email[0]}</Avatar>
+            )}
             <h4 className="headerOption__title">{title}</h4>
         </div>
     )

@@ -5,8 +5,11 @@ import PostAction from './PostAction/PostAction'
 import Post from './Post/Post'
 import { db } from '../../firebase'
 import firebase from 'firebase'
+import { useSelector } from 'react-redux'
+import { selectUser } from '../../helpers/userSlice'
 
 function Feed() {
+    const user = useSelector(selectUser);
     const [input, setInput] = useState('');
     const [posts, setPosts] = useState([]);
 
@@ -27,10 +30,10 @@ function Feed() {
     const sendPost = (e) => {
         e.preventDefault();
         db.collection('posts').add({
-            name: "John Doe",
-            description: 'Personal Description',
+            name: user.displayName,
+            description: user.email,
             message: input,
-            photoUrl: 'https://image.freepik.com/free-vector/panda-esport-gaming-mascot-logo_1258-29055.jpg',
+            photoUrl: user.photoUrl || "",
             timestamp: firebase.firestore.FieldValue.serverTimestamp(),
         });
         
