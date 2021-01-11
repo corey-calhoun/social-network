@@ -42,7 +42,6 @@ function Feed() {
             <div className="feed__postContainer">
                 <form>
                     <input 
-                        value={input}
                         type="text" 
                         className="feed__input" 
                         placeholder="Start a post..."
@@ -68,12 +67,12 @@ function Feed() {
             </div>
             <div className="feed__postSection">
 
-                {posts.map(({ id, data: { name, description, messsage, photoUrl} }) => (
+                {posts.map(({ id, data: { name, description, message, photoUrl} }) => (
                     <Post 
                         key={id}
                         name={name}
                         description={description}
-                        message={messsage}
+                        message={message}
                         photoUrl={photoUrl}
                     />
                 ))}
