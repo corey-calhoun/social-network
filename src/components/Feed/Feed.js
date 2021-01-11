@@ -27,8 +27,8 @@ function Feed() {
     const sendPost = (e) => {
         e.preventDefault();
         db.collection('posts').add({
-            name: "Corey Calhoun",
-            description: 'Full Stack JavaScript Developer',
+            name: "John Doe",
+            description: 'Personal Description',
             message: input,
             photoUrl: 'https://image.freepik.com/free-vector/panda-esport-gaming-mascot-logo_1258-29055.jpg',
             timestamp: firebase.firestore.FieldValue.serverTimestamp(),
@@ -41,7 +41,7 @@ function Feed() {
         <div className="feed">
             <div className="feed__postContainer">
                 <form>
-                    <input 
+                    <input
                         type="text" 
                         className="feed__input" 
                         placeholder="Start a post..."
