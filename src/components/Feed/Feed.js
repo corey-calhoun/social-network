@@ -34,7 +34,7 @@ function Feed() {
             timestamp: firebase.firestore.FieldValue.serverTimestamp(),
         });
         
-        setInput("");
+        setInput('');
     };
 
     return (
