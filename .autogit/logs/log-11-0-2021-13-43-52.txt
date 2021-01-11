@@ -1,0 +1,21 @@
+-------------------- Auto-Git Log --------------------
+		Mon Jan 11 2021 13:43:52 GMT-0600 (Central Standard Time)
+------------------------------------------------------
+
+Modified files:
+* .eslintcache
+* package-lock.json
+* package.json
+* src/App.css
+* src/components/Feed/Feed.js
+* src/components/Feed/Post/Post.js
+
+
+Created files:
+* .autogit/logs/log-11-0-2021-13-6-16.txt
+
+
+Deleted files:
+
+
+Renamed files:
