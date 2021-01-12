@@ -21,8 +21,8 @@ function Login() {
             dispatch(login({
                 email: userAuth.email,
                 uid: userAuth.user.uid,
-                displayName: userAuth.user.displayName,
-                profileUrl: userAuth.user.photoUrl,
+                displayName: name,
+                protoUrl: profilePic,
             }))
         })
         .catch(error => alert(error));
