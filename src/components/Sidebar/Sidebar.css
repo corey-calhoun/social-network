@@ -40,6 +40,8 @@
 .sidebar__top > h4 {
     color: lightgray;
     font-size: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .sidebar__stats {
