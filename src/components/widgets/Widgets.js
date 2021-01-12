@@ -16,7 +16,7 @@ function Widgets() {
             </div>
         </div>
         
-    }
+    };
 
 
     return (
@@ -26,6 +26,10 @@ function Widgets() {
                 <InfoIcon fontSize="small" />
             </div>
 
+            {newsArticle("this is a sample", 'Top News - 254 readers')}
+            {newsArticle("this is a sample", 'Top News - 254 readers')}
+            {newsArticle("this is a sample", 'Top News - 254 readers')}
+            {newsArticle("this is a sample", 'Top News - 254 readers')}
             {newsArticle("this is a sample", 'Top News - 254 readers')}
         </div>
     )
