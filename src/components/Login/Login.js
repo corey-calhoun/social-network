@@ -51,11 +51,6 @@ function Login() {
             .catch((error) => alert(error));
     };
 
-    const logIntoApp = (e) => {
-        e.preventDefault();
-
-    };
-
     return (
         <div className="login">
                 <img src={logo} alt="" />
@@ -77,7 +72,7 @@ function Login() {
                         value={email} 
                         onChange={e => setEmail(e.target.value)} 
                         type="email" 
-                        placeholder="Enter your email address..." 
+                        placeholder="Enter your email address" 
                         required
                     />
                     <input 
