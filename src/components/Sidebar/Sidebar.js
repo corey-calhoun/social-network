@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { selectUser } from "../../helpers/userSlice";
 import "./Sidebar.css"
 
-function Sidebar({}) {
+function Sidebar() {
 
     const user = useSelector(selectUser);
 
