@@ -1,0 +1,23 @@
+-------------------- Auto-Git Log --------------------
+		Tue Jan 12 2021 13:54:30 GMT-0600 (Central Standard Time)
+------------------------------------------------------
+
+Modified files:
+* .eslintcache
+* src/components/Login/Login.js
+
+
+Created files:
+* .autogit/logs/log-12-0-2021-13-24-20.txt
+* .firebase/hosting.YnVpbGQ.cache
+* .firebaserc
+* .github/workflows/firebase-hosting-merge.yml
+* .github/workflows/firebase-hosting-pull-request.yml
+* firebase.json
+
+
+Deleted files:
+* firebase-debug.log
+
+
+Renamed files:
