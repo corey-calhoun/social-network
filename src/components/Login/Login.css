@@ -17,24 +17,25 @@
 .login > form {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .login > form > input {
-    width: 350px;
-    height: 50px;
+    width: 320px;
+    height: 40px;
     font-size: 20px;
     padding-left: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
-    background-color: teal;
+    background-color: #333;
 }
 
 .login > form > button {
     height: 50px;
-    width: 365px;
+    width: 330px;
     font-size: large;
     color: #fff;
-    background-color: #0074b1;
+    background-color: #05d9e8;
     border-radius: 5px;
 }
 
@@ -44,10 +45,11 @@
 }
 
 .login__register {
-    color: #0177b7;
+    color: #05d9e8;
     cursor: pointer;
 }
 
 .login > p {
     margin-top: 20px;
+    color: #fff;
 }

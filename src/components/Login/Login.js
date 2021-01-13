@@ -59,7 +59,7 @@ function Login() {
                         value={name}
                         onChange={e => setName(e.target.value)}
                         type="text" 
-                        placeholder="Full name (required for registrationi)" 
+                        placeholder="Full name (required for registration)" 
                         required
                     />
                     <input 
