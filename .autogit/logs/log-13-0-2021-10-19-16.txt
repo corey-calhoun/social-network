@@ -1,0 +1,19 @@
+-------------------- Auto-Git Log --------------------
+		Wed Jan 13 2021 10:19:16 GMT-0600 (Central Standard Time)
+------------------------------------------------------
+
+Modified files:
+* .eslintcache
+* src/App.css
+* src/components/HeaderOption/HeaderOption.js
+* src/components/Sidebar/Sidebar.js
+
+
+Created files:
+* .autogit/logs/log-13-0-2021-9-49-6.txt
+
+
+Deleted files:
+
+
+Renamed files:
