@@ -11,7 +11,7 @@ function HeaderOption({ avatar, Icon, title, onClick }) {
         <div className="headerOption" onClick={onClick} >
             {Icon && <Icon className="headerOption__icon" />}
             {avatar && (
-                <Avatar className="headerOption__icon" src={user?.photoUrl}>{user?.email[0]}</Avatar>
+                <Avatar className="headerOption__icon" src={user?.photoUrl}>?</Avatar>
             )}
             <h4 className="headerOption__title">{title}</h4>
         </div>

@@ -20,7 +20,7 @@ function Sidebar() {
             <div className="sidebar__top">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeXAhfsN1JhTAHF0l2t_0RrEs-JqvxJzqdrQ&usqp=CAU" alt="" />
                 <Avatar className="sidebar__avatar" src={user.photoUrl}>
-                    {user.email[0]}
+                    ?
                 </Avatar>
                 <h3>{user.displayName}</h3>
                 <h4>{user.email}</h4>
