@@ -2,7 +2,7 @@ import React, { useState} from 'react';
 import { useDispatch } from 'react-redux';
 import { login } from '../../helpers/userSlice'
 import './Login.css';
-import logo from '../../img/LinkedIn_logo.svg';
+import logo from '../../img/logo.png';
 import { auth } from '../../firebase';
 
 function Login() {
