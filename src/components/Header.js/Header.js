@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../img/LinkedIn_logo.svg';
+import logo from '../../img/logo.png';
 import './Header.css';
 import { BusinessCenter, Home, Message, Notifications, People, Search } from '@material-ui/icons';
 import HeaderOption from '../HeaderOption/HeaderOption';
